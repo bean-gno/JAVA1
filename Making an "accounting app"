@@ -4,14 +4,14 @@ public class AccountingApp {
 
 	public static void main(String[] args) {
 		
-		double valueOfSupply = Double.parseDouble(args[0]); // total supply cost input
+		double valueOfSupply = Double.parseDouble(args[0]); // total supply price input
 		double vatRate = 0.1; 
 		double vat = valueOfSupply*vatRate;  // actual VAT
-		double total = valueOfSupply+vat;  // cost that consumer needs to pay
-		double expenseRate = 0.3;
-		double expense = valueOfSupply*expenseRate;
-		double income = valueOfSupply-expense;
-		double dividend1 = income*0.5;
+		double total = valueOfSupply+vat;  // actual price that consumer needs to pay
+		double expenseRate = 0.3;  // production cost rate (30%)
+		double expense = valueOfSupply*expenseRate; // actual production cost
+		double income = valueOfSupply-expense;  // profit
+		double dividend1 = income*0.5;  // dividends
 		double dividend2 = income*0.3;
 		double dividend3 = income*0.2;
 
