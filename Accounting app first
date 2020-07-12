@@ -1,4 +1,4 @@
-//Basic accounting app calculating vat, income, and individual dividend using argument input in Java
+//Accounting app project, first easy version.
 
 public class AccountingApp {
 
